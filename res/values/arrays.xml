@@ -1,0 +1,66 @@
+<resources>
+    <integer-array name="textPosition_values">
+        <item>0</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="textPosition_labels">
+        <item>@string/sett_textPos_Invisible</item>
+        <item>@string/sett_textPos_Above</item>
+        <item>@string/sett_textPos_Top</item>
+        <item>@string/sett_textPos_Middle</item>
+        <item>@string/sett_textPos_Bottom</item>
+        <item>@string/sett_textPos_Below</item>
+    </string-array>
+    <integer-array name="batterySelection_values">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="batterySelection_labels">
+        <item>@string/sett_battSel_Both</item>
+        <item>@string/sett_battSel_Main</item>
+        <item>@string/sett_battSel_Dock</item>
+    </string-array>
+    <integer-array name="textColor_values">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="textColor_labels">
+        <item>@string/sett_textColor_White</item>
+        <item>@string/sett_textColor_Black</item>
+    </string-array>
+    <integer-array name="margin_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+    <string-array name="margin_labels">
+        <item>@string/sett_margin_None</item>
+        <item>@string/sett_margin_Top</item>
+        <item>@string/sett_margin_Bottom</item>
+        <item>@string/sett_margin_Both</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>Default</item>
+        <item>Default.90deg</item>
+    </string-array>
+    <string-array name="theme_labels">
+        <item>@string/theme_default</item>
+        <item>@string/theme_default_sideways</item>
+    </string-array>
+    <integer-array name="defaultDaysTab_values">
+        <item>3</item>
+        <item>7</item>
+        <item>30</item>
+    </integer-array>
+    <string-array name="defaultDaysTab_labels">
+        <item>@string/sett_defaultDaysTab_3</item>
+        <item>@string/sett_defaultDaysTab_7</item>
+        <item>@string/sett_defaultDaysTab_30</item>
+    </string-array>
+</resources>

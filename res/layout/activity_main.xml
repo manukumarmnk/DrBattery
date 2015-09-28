@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    tools:context="com.ForkTech.drbattery.MainActivity"
+    android:background="@drawable/backg" >
+
+    <LinearLayout
+        android:id="@+id/Linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:padding="6dp"
+            android:text="Current" 
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:padding="6dp"
+            android:textColor="#ffffff"
+            android:text="Voltage" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:padding="6dp"
+            android:text="Temp" 
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_below="@+id/Linearlayout1" >
+
+        <TableRow android:layout_weight="1" >
+
+            <TextView
+                style="@style/table_label"
+                android:layout_gravity="center_vertical"
+                android:text="@string/battery_info_status_label" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/table_value"
+                android:layout_gravity="center_vertical" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1" >
+
+            <TextView
+                style="@style/table_label"
+                android:layout_gravity="center_vertical"
+                android:text="@string/battery_info_last_charged_label" />
+
+            <TextView
+                android:id="@+id/last_charged"
+                style="@style/table_value"
+                android:layout_gravity="center_vertical" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1" >
+
+            <TextView
+                style="@style/table_label"
+                android:layout_gravity="center_vertical"
+                android:text="@string/battery_info_level_label" />
+
+            <TextView
+                android:id="@+id/level"
+                style="@style/table_value"
+                android:layout_gravity="center_vertical" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1" >
+
+            <TextView
+                style="@style/table_label"
+                android:layout_gravity="center_vertical"
+                android:text="@string/battery_info_scale_label" />
+
+            <TextView
+                android:id="@+id/scale"
+                style="@style/table_value"
+                android:layout_gravity="center_vertical" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/showBatterySummary"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Linearlayout1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.99"
+            android:src="@drawable/batt_100_90deg" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+</RelativeLayout>
